@@ -30,7 +30,7 @@ Commands are exposed as `corpus` (primary) and `cpack` (packer alias).
 ### From PyPI (recommended)
 
 ```bash
-pipx install corpus-packer
+pipx install corpus-cli
 ```
 
 ### Build from Source
@@ -58,7 +58,7 @@ Build distribution packages:
 
 ```bash
 make build
-# Creates dist/corpus_packer-*.whl and dist/corpus-packer-*.tar.gz
+# Creates dist/corpus_cli-*.whl and dist/corpus-cli-*.tar.gz
 ```
 
 ### Docker

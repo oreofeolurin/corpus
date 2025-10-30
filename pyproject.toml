@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "corpus-packer"
+name = "corpus-cli"
 version = "0.1.0"
 description = "Corpus CLI to capture YouTube artifacts (metadata, transcripts, screenshots) and manage local corpora."
 readme = "README.md"
