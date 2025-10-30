@@ -47,7 +47,20 @@ This installs the package in editable mode with development dependencies.
 
 ### Standalone Binaries
 
-Build a single-file executable:
+Download pre-built executables from GitHub releases:
+
+1. Go to [Releases](https://github.com/oreofeolurin/corpus/releases)
+2. Download the binary for your platform:
+   - `corpus-macOS` (macOS)
+   - `corpus-ubuntu` (Linux)
+   - `corpus-windows` (Windows)
+3. Make executable and run:
+   ```bash
+   chmod +x corpus-macOS
+   ./corpus-macOS --help
+   ```
+
+Or build from source:
 
 ```bash
 make binary
