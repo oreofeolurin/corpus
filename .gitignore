@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# PyInstaller
+*.spec
+
+# Corpus
+corpus-out.txt
+*.txt
+
+# IDE
+.idea/
+.vscode/
+.cursor/
+
+# Local data/artifacts
+artifacts/
+.yt/
+
+# OS
+.DS_Store

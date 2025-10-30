@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corpus-packer"
+version = "0.1.0"
+description = "Corpus CLI to capture YouTube artifacts (metadata, transcripts, screenshots) and manage local corpora."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [ { name = "Oreofe Olurin" } ]
+keywords = ["youtube", "capture", "corpus", "mcp", "data-science", "cli", "packaging"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Multimedia :: Video :: Capture",
+  "Topic :: Text Processing :: Markup",
+]
+dependencies = [
+  "typer>=0.12",
+  "yt-dlp>=2024.4.9",
+  "youtube-transcript-api>=0.6.2",
+  "PyYAML>=6.0.0",
+  "fastapi>=0.110",
+  "uvicorn>=0.23",
+]
+
+[project.urls]
+Homepage = "https://github.com/oreofeolurin/Corpus"
+Repository = "https://github.com/oreofeolurin/Corpus"
+Documentation = "https://github.com/oreofeolurin/Corpus#readme"
+Issues = "https://github.com/oreofeolurin/Corpus/issues"
+
+[project.scripts]
+corpus = "corpus.cli:app"
+cpack = "corpus.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["corpus*"]
+exclude = ["artifacts*", "corpus-packer*", "tests*"]
+
+
